@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#ebebeb">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_white" android:layout_marginLeft="10dp" android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="#FFFFFF" android:layout_marginBottom="10dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/txtID"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:ems="10" android:background="@drawable/inputbox" android:hint="학번" android:layout_margin="10dp" android:imeOptions="actionNext" android:inputType="number" android:numeric="integer" android:singleLine="true" android:hapticFeedbackEnabled="true"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/txtPW"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputbox"
+                android:ems="10"
+                android:hint="비밀번호"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword" android:hapticFeedbackEnabled="true"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@layout/button_selector"
+                android:text="로그인" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:hapticFeedbackEnabled="true"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/chkAuto"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="자동 로그인"
+            android:textColor="#2b2b2b" android:layout_marginBottom="10dp" android:layout_marginLeft="10dp" android:hapticFeedbackEnabled="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtFree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoseo Table by 20122958" android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

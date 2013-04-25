@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" android:layout_height="fill_parent" 
+    android:orientation="vertical" android:background="#ebebeb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강"
+            android:singleLine="true"
+			android:ellipsize="marquee"
+		    android:marqueeRepeatLimit ="marquee_forever"
+		    android:scrollHorizontally="true"
+		    android:focusable="true"
+            android:textColor="#2b2b2b"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvClassNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PR00000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnColor"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="#111" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AllL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvClassRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="강의실 :" />
+
+            <TextView
+                android:id="@+id/tvCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="학점 :" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvProfessor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="교수님 :" />
+
+            <TextView
+                android:id="@+id/TvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:autoLink="email"
+                android:text="admin@devflow.kr" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvContract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:autoLink="email|phone"
+                android:text="연락처 :" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtChapel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:autoLink="email|phone"
+            android:text="채플 좌석 :"
+            android:textColor="#ee9999"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="8"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/pull_refresh_list"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_weight="8"
+                android:cacheColorHint="#00000000"
+                android:divider="#ebebeb"
+                android:dividerHeight="2dp"
+                android:fadingEdge="none" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/inputbox"
+                    android:ems="10" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnWrite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:text="글쓰기" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

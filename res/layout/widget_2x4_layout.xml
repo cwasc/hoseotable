@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#33b5e5"
+    android:id="@+id/MainBack">
+    
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtCap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="#5b5b5b" android:text="현재 강의 (00:00 ~ 00:00)"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtClass"
+		   android:singleLine="true" 
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="left|center_horizontal" android:text="위젯을 준비중입니다..." android:layout_marginLeft="10dp"
+			android:ellipsize="marquee"
+		    android:marqueeRepeatLimit ="marquee_forever"
+		    android:scrollHorizontally="true"
+		    android:focusable="true"
+		    android:focusableInTouchMode="true"> 
+		 <requestFocus android:focusable="true"
+		      android:focusableInTouchMode="true"
+		      android:duplicateParentState="true" /> 
+        </TextView>
+        <TextView
+            android:id="@+id/txtNext"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#2b2b2b" android:layout_gravity="left|center_horizontal" android:text="다음 강의 (00:00 ~ 00:00)"/>
+    </LinearLayout>
+
+</LinearLayout>
