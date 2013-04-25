@@ -15,7 +15,12 @@ Android 2.1+
 Reference
 ==========
 About JSOUP Library <a href="http://jsoup.org/">here</a><br>
-About TwoDScrollView View Library <a href="http://blog.gorges.us/2010/06/android-two-dimensional-scrollview/">here</a><br>
+About TwoDScrollView Library <a href="http://blog.gorges.us/2010/06/android-two-dimensional-scrollview/">here</a><br>
+About PullToRefreshView Library <a href="https://github.com/chrisbanes/Android-PullToRefresh">here</a>
+
+Notes
+==========
+NOT INCLUDED PHP FILES.
 
 
 License
