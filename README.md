@@ -1,7 +1,6 @@
 Hoseotable
 ==========
-
-A Online Class Table Android Application for Hoseo University.
+An Online based Timetable Android Application for Hoseo University
 
 
 Getting help
