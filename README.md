@@ -13,6 +13,11 @@ Requires
 ==========
 Android 2.1+
 
+Refrerence
+==========
+About JSOUP Library <a href="http://jsoup.org/">here</a><br>
+About TwoDScrollView View Library <a href="http://blog.gorges.us/2010/06/android-two-dimensional-scrollview/">here</a><br>
+
 
 License
 ==========
