@@ -45,7 +45,7 @@ public class Chapel
 				int StartNumber = lData.getInt("S");
 				int LineCount = lData.getInt("C");
 				
-				if( StartNumber <= numbericSeat && StartNumber+LineCount > numbericSeat ) {
+				if( StartNumber <= numbericSeat && StartNumber+LineCount >= numbericSeat ) {
 					String SeatLetter = lData.getString("L");
 					int LetterStart = lData.getInt("LS");
 					int offset = numbericSeat - StartNumber;
